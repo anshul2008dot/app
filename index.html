@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="app-container">
+    <header id="app-header">
+      <h1>Study App</h1>
+    </header>
+  
+    <div id="app-content">
+      <div id="study-timer">
+        <h2>Study Timer</h2>
+        <button onclick="startStudyTimer()">Start Timer</button>
+        <button onclick="stopStudyTimer()">Stop Timer</button>
+      </div>
+  
+      <div id="todo-list">
+        <h2>Todo List</h2>
+        <input type="text" id="taskInput" placeholder="Add a task...">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList">
+          <!-- Todo list items will be dynamically added here -->
+        </ul>
+      </div>
+  
+      <div id="history">
+        <h2>History of Time Studied</h2>
+        <button onclick="getStudyHistory()">Show History</button>
+        <ul id="historyList">
+          <!-- Study history items will be dynamically added here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
